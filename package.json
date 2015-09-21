@@ -1,14 +1,8 @@
 {
-  "name": "mithril",
+  "name": "mithrilWebShop",
   "version": "0.0.1",
-  "description": "This project for the report",
-  "main": "index.html",
-  "dependencies": {
-    "bootstrap": "^3.3.5",
-    "browser-sync": "^2.9.3",
-    "requirejs": "^2.1.20"
-  },
-  "devDependencies": {},
+  "description": "this project created for the report(Ciklum)",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,9 +10,20 @@
     "type": "git",
     "url": "https://github.com/Rmatkovsky/mithrilWebShop.git"
   },
+  "keywords": [
+    "mithril",
+    "example",
+    "require"
+  ],
   "author": "Ruslan Matkovsky",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Rmatkovsky/mithrilWebShop/issues"
-  }
+  },
+  "dependencies": {
+    "requirejs": "^2.1.20",
+    "bootstrap": "^3.3.5",
+    "mithril": "^0.2.0"
+  },
+  "devDependencies": {}
 }
