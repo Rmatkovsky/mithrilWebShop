@@ -1,5 +1,3 @@
-define( function( require ) {
-    return function( iComponent ) {
-
-    };
-});
+/**
+ * Created by cocaine on 22.09.15.
+ */
