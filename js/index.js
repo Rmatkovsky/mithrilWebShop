@@ -1,9 +1,12 @@
 require.config({
-    baseUrl: '/js/',
+    baseUrl: '/',
     paths: {
-        'mithril': 'libs/mithril'
+        'mithril': 'node_modules/mithril/mithril.min',
+        'modules': 'node_modules',
+        'configs':  'js/configs',
+        'components': 'js/components'
     },
-    deps:['init'],
+    deps:['js/init'],
     shim: {
         'mithril': {exports: 'mithril'}
     }

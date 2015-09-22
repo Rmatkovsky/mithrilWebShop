@@ -1,8 +1,18 @@
 {
-  "name": "mithrilWebShop",
+  "name": "MithrilWebShop",
   "version": "0.0.1",
-  "description": "this project created for the report(Ciklum)",
+  "description": "This a little example which shows work the MVC Framework Mithril",
   "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "browser-sync": "^2.9.4",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "mithril": "^0.2.0",
+    "mongodb": "^2.0.43",
+    "requirejs": "^2.1.20"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,20 +20,9 @@
     "type": "git",
     "url": "https://github.com/Rmatkovsky/mithrilWebShop.git"
   },
-  "keywords": [
-    "mithril",
-    "example",
-    "require"
-  ],
   "author": "Ruslan Matkovsky",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Rmatkovsky/mithrilWebShop/issues"
-  },
-  "dependencies": {
-    "requirejs": "^2.1.20",
-    "bootstrap": "^3.3.5",
-    "mithril": "^0.2.0"
-  },
-  "devDependencies": {}
+  }
 }

@@ -1,26 +1,33 @@
 define( function( require ) {
     return function( iComponent ) {
-        iComponent.model = function() {
+        var header = {},
+            basket = iComponent;
+
+        header.model = function() {
             this.title = m.prop('Mithril webshop');
-            this.cartTitle = m.prop('Cart');
             this.contacts = m.prop('Contacts');
         };
 
-        iComponent.controller = function() {
+        header.controller = function() {
             var ctrl = this;
-
-            this.model = m.prop( [new iComponent.model()] );
+            this.headerModel = m.prop( new header.model() );
         };
 
-        iComponent.view = function( ctrl ) {
-            return m('.navbar-header', [
-                    m('#home-link',[
-                        m('a',ctrl.model.title())
-                    ]),
-                    m('#shopping-cart', [
-                        m('a', ctrl.model.cartTitle())
+        header.view = function( ctrl ) {
+            var model = ctrl.headerModel();
+
+            return m('div', { class: 'container-fluid' }, [
+                m('div', { class: 'navbar-header' }, [
+                    m('div',[
+                        m('a',{ href:'/', class: 'navbar-brand' }, model.title())
                     ])
-            ]);
+                ]),
+                m('div', { class: 'navbar-collapse collapse' }, [
+                    m.component( basket )
+                ])
+            ])
         };
+
+        return header;
     };
 });
